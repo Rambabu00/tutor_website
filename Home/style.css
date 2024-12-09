@@ -1,0 +1,175 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    padding-top: 50px; 
+background: linear-gradient(90deg, rgb(169, 244, 214) 0%, rgb(223, 207, 225) 35%, rgb(212, 220, 226) 66%, rgba(161,223,236,1) 100%);
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+.navbar{
+    position: fixed;
+    top: 0px;
+   width: 100%;
+   height: 50px;
+   overflow: hidden;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   background-color: rgb(105, 108, 108);
+   align-items: center;
+   z-index: 1000;
+}
+.left{
+     margin-left: 10px;
+     display: flex;
+     flex-flow: row nowrap;
+}
+ .right ul{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 40px;
+    margin-right: 20px;
+   
+ }
+ ul{
+    list-style: none;
+ }
+ ul li  a{
+    text-decoration: none;
+ }
+ .right ul li a{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(9, 9, 9);
+ }
+ .right ul li{
+    position: relative;
+    cursor: pointer;
+    padding: 5px 10px;
+ }
+  .left h3::first-letter{
+color: brown;
+  }
+.right ul li a::after{  
+content: "";
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 0;
+cursor: pointer;
+background-color: rgba(220, 168, 46, 0.7);
+transition: 0.5s;
+  }
+  .right ul li a:hover::after{
+    width: 100%;
+    box-shadow: 0 0 50px 15px rgba(220, 168, 46);
+  }
+  
+  .about img{
+    width: 100%;
+    opacity: 0.5;
+  }
+  .about .about_text{
+    position: absolute;
+    top: 100px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 500;  
+    color: rgb(54, 54, 54);  
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: sans-serif;
+  }
+  .about_text p::first-letter{
+     font-weight: bold;
+  }
+  
+.about .about_text .explore{
+display: flex;
+flex-flow:  row wrap;
+align-items: center;
+justify-content: center;
+gap: 20px;
+padding: 20px;
+}
+
+ .explore h3{
+     padding: 20px 10px;
+    text-align: center;
+    background-color:  rgba(81, 161, 201, 0.8);
+    border: 1px solid  rgba(81, 161, 201, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 0 50px 15px rgba(81, 161, 201, 0.8);
+ }
+   .join_us{
+    margin-top: 20px;
+    height: 600px;
+     display: flex;
+     flex-flow: column nowrap;
+     justify-content: center;
+     align-items: center;
+     padding: 10px;
+     background-color: rgb(165, 193, 184, 0.7);
+   }
+.join_us ul{
+   display: flex;
+   flex-flow: row nowrap;
+   gap: 50px;
+   margin-top: 20px;
+}
+.join_us ul li a{
+   color: rgb(36, 36, 37);
+   background-color: rgb(28, 108, 237);
+   text-align: center;
+   padding: 10px 20px;
+   border: 1px solid rgb(28, 108, 237);
+   border-radius: 20px;
+   transition: 0.5s;
+}
+ .join_us ul li a:hover{
+   box-shadow: 0px 0px 50px 15px rgb(28, 108, 237, 0.5);
+   padding: 10px 25px;
+ }
+ .contact {
+   width: 100%;
+   height: 400px;
+   margin-top: 20px;
+   background-color: rgb(241, 222, 197, 0.5);
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+ }
+
+ .contact ul{
+   display: flex;
+   flex-flow: column wrap;
+   gap: 20px;
+   padding: 20px;
+ }
+ .contact ul li{
+   position: relative;
+ }
+ .contact ul li a::after{
+   content: "";
+   position: absolute;
+   left: 0px;
+    bottom: -9px;
+   height: 3px;
+   width: 0;
+   background-color: rgb(201, 83, 83);
+   transition: 0.5s;
+ }
+ .contact ul li a:hover::after{
+   width: 100%;
+ }
